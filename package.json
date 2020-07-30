@@ -15,7 +15,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "commit": "sh ./bash/commit.sh"
+    "commit": "sh ./bash/commit.sh",
+    "diff": "sh ./bash/diff.sh"
   },
   "eslintConfig": {
     "extends": "react-app"
