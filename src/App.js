@@ -1,9 +1,25 @@
-import React from 'react'
-
+import React from 'react';
+import { Route} from 'react-router'
+import {BrowserRouter as Router} from 'react-router-dom';
 export default function App() {
     return (
-        <div>
-            123s
-        </div>
+        <Router>
+            <Route path='/'   component={Comp1}></Route>
+            <Route path='/a/:id'  component={Comp2}></Route>
+        </Router>
+    )
+}
+
+function Comp1(props) {
+    console.log(props)
+    return (
+        <h1>Comp1</h1>
+    )
+}
+
+function Comp2(props){
+    console.log(props,22)
+    return(
+        <h1>Comp2</h1>
     )
 }
