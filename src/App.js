@@ -4,8 +4,8 @@ import {BrowserRouter as Router} from 'react-router-dom';
 export default function App() {
     return (
         <Router>
-            <Route path='/'   component={Comp1}></Route>
-            <Route path='/a/:id'  component={Comp2}></Route>
+            <Route path='/a/b'   component={Comp1}></Route>
+            <Route path='/'  component={Comp2}></Route>
         </Router>
     )
 }
